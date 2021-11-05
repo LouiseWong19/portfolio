@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;
+  700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/93b5b55c3b.js" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Portfolio Project</title>
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="nav__mobile">
+    <h1 class="nav__logo"><img src="logo.jpg" alt="logo"></h1>
+    <!-- <ul class="hamburger-menu">
+      <li><a class="menuItem" href="#">Home</a></li>
+      <li><a class="menuItem" href="#">Projects</a></li>
+      <li><a class="menuItem" href="#">About</a></li>
+      <li><a class="menuItem" href="#">Contact</a></li>
+    </ul> -->
+    <button class="menu-btn"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <nav class="nav__desktop">
+    <h1 class="nav__logo"><img src="logo.jpg" alt="logo"></h1>
+    <ul>
+      <li><a href="#intro">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</li></a>
+    </ul>
+  </nav>
+
+  <!-- Introduction -->
+  <section class="intro" id="intro">
+    <div class="intro-background">
+
+    </div>
+    <div class="intro-background-image">
+      <!-- <img src="intro_img.jpg"> -->
+      <div class="intro-text">
+        <h2>I'm Lousie Wong</h2>
+        <h2>&</h2>
+        <h2>I'm a web developer</h2>
+        <br>
+        <a href="#projects"><i class="iconify" data-icon="fluent:arrow-circle-down-48-regular"></i></a>
+    </div>
+    </div>
+  </section>
+  
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h3>Projects</h3>
+    <div class="project-box">
+      <div id="project-box-1">
+        <div><a href="https://www.figma.com/proto/Oipa4NyJdZToslfYwAd3Fv/Bears-Bakery_practice?node-id=25%3A88&scaling=min-zoom&page-id=25%3A87"><img src="bears_bakery.PNG"></a></div>
+        <p>Skills used:</p>
+        <p>Figma</p>
+      </div>
+      <div id="project-box-2">
+        <div><a href="#"></a></div>
+        <p>Skills used:</p>
+      </div>
+      <div id="project-box-3">
+        <div><a href="#"></a></div>
+        <p>Skills used:</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h3>About</h3>
+    <div id="about-box">
+      <div class="about-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Neque aperiam, quis totam velit dolore eos dolor blanditiis reiciendis 
+          repellendus exercitationem? Suscipit enim magni velit doloribus porro 
+          beatae illo architecto voluptatibus.</p>
+          <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quas impedit 
+          doloremque iste ullam eaque atque magnam cupiditate tempore excepturi officia
+          minus harum expedita labore.</p>
+      </div>
+      <div id="my-img">
+        <img src="myself.jpg" alt="Picture of Louise Wong">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="skills" id="skills">
+    <h3>Skills</h3>
+    <div class="skill-box">
+      <i class="fab fa-html5"></i>
+      <i class="fab fa-css3-alt"></i>
+      <i class="fab fa-js"></i>
+      <i class="fab fa-github"></i>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h3>Contact</h3>
+    <div class="contact-box">
+      <div id="contact-box">
+        <i class="fab fa-linkedin"></i>
+        <i class="far fa-envelope"></i>
+        <i class="fab fa-github"></i>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>© Louise Wong</p>
+  </footer>
+  
+
+  <!-- <script>
+    const hamburger = document.querySelector(".menu-btn");  
+     const navsub = document.querySelector(".hamburger-menu");  
+     //addEventListener() show or hidden nav bar by clicking
+      hamburger.addEventListener('click', () => {  
+       //activates toggle functionality either active or inactive  
+       navsub.classList.toggle("nav-change")  
+     });  
+  </script> -->
+
+
+</body>
+</html>

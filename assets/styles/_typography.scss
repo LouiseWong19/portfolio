@@ -1,0 +1,45 @@
+@import "_variables.scss";
+
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'PT Sans Narrow';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: $primary-color;
+}
+
+body{
+  font-family: $primary-font;
+}
+
+h1{
+  font-size: 2.8rem;
+}
+
+h2{
+  font-size: 36px;
+  font-weight: 400;
+}
+
+h3{
+  font-size: 1.875rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+@media screen and(min-width:440px){
+  h3{
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and(min-width:768px){
+  h3{
+    font-size: 2.25rem;
+  }
+
+}
