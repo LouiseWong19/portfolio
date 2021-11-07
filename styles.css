@@ -25,14 +25,40 @@ h3 {
   margin-bottom: 25px;
 }
 
+h4 {
+  color: #FCFCFC;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+  margin: 15px 0;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
 @media screen and (min-width: 440px) {
   h3 {
     font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 768px) {
   h3 {
     font-size: 2.25rem;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h4 {
+    margin: 20px 0;
+    font-size: 20px;
   }
 }
 html {
@@ -215,38 +241,43 @@ body {
   align-items: center;
   justify-content: center;
   justify-items: center;
+  text-align: center;
 }
 .skills .skill-box > i {
   font-size: 32px;
 }
-
-.contact {
-  margin-top: 30px;
-}
-.contact .contact-box {
-  display: flex;
-  justify-content: space-evenly;
-}
-.contact .contact-box #contact-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
-}
-.contact .contact-box #contact-box i {
-  font-size: 32px;
+.skills .skill-box > i > p {
+  font-size: 10px;
+  margin-top: 5px;
 }
 
 footer {
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
-  margin-top: 30px;
+  margin-top: 40px;
   background-color: #031D3A;
-  height: 10vh;
+  height: 80px;
+}
+footer .contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .contact-box #contact-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+footer .contact-box #contact-box a i {
+  font-size: 24px;
+  color: #FCFCFC;
+  margin-bottom: 10px;
 }
 footer p {
-  color: #D2E0E3;
+  color: #FCFCFC;
   font-size: 11px;
+  margin-top: 10px;
   padding: 10px;
 }
 
@@ -259,9 +290,6 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: 85vh;
-    background-repeat: no-repeat;
-    background-position: right;
     box-shadow: none;
   }
 
@@ -315,22 +343,28 @@ footer p {
   .skills .skill-box > i {
     font-size: 45px;
   }
+  .skills .skill-box > i p {
+    font-size: 14px;
+  }
 
-  .contact .contact-box #contact-box i {
+  .contact-box #contact-box i {
     font-size: 40px;
   }
 
   footer {
-    height: 15vh;
+    height: 125px;
+    display: block;
+    margin-top: 40px;
   }
   footer p {
     font-size: 13px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
   .intro .intro-background {
     height: 3vh;
-    width: 55%;
+    width: 70%;
   }
 
   .projects {
@@ -387,15 +421,15 @@ footer p {
     font-size: 50px;
   }
 
-  .contact .contact-box #contact-box i {
-    font-size: 50px;
-  }
-
   footer {
-    height: 18vh;
+    height: 160px;
+  }
+  footer .contact-box #contact-box a i {
+    font-size: 30px;
   }
   footer p {
     font-size: 18px;
+    margin-top: 25px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -404,11 +438,13 @@ footer p {
     width: 50%;
   }
   .intro .intro-background-image {
-    background-size: 100vh;
+    background-size: 90vh;
     justify-content: flex-start;
+    background-repeat: no-repeat;
+    background-position: right;
   }
   .intro .intro-text {
-    margin-left: 85px;
+    margin-left: 55px;
   }
 
   .about #about-box .about-text {
@@ -432,6 +468,20 @@ footer p {
     gap: 65px;
   }
   .skills .skill-box > i {
-    font-size: 50px;
+    font-size: 60px;
+  }
+  .skills .skill-box > i p {
+    font-size: 16px;
+  }
+
+  footer {
+    height: 190px;
+  }
+  footer .contact-box #contact-box a i {
+    font-size: 40px;
+  }
+  footer p {
+    font-size: 20px;
+    margin-top: 25px;
   }
 }
