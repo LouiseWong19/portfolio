@@ -80,11 +80,37 @@ html {
   width: 60px;
 }
 
+#hamburger-menu {
+  display: none;
+  list-style-type: none;
+  font-size: 22px;
+  text-align: center;
+  background-color: #031D3A;
+  z-index: 99;
+  padding-top: 5rem;
+}
+#hamburger-menu .menuItem {
+  color: #FCFCFC;
+  text-decoration: none;
+  margin: 50px 80px;
+}
+
 .menu-btn {
   border: none;
   background-color: #FCFCFC;
+  z-index: 100;
 }
 .menu-btn i {
+  font-size: 24px;
+}
+
+.cancel-btn {
+  display: none;
+  border: none;
+  background-color: #FCFCFC;
+  z-index: 100;
+}
+.cancel-btn i {
   font-size: 24px;
 }
 
@@ -120,6 +146,9 @@ html {
     height: 90px;
     width: 90px;
   }
+  .nav__logo > img .nav__mobile {
+    display: block;
+  }
 }
 @media screen and (min-width: 768px) {
   .nav__mobile {
@@ -148,7 +177,7 @@ body {
 }
 .intro .intro-background-image {
   height: 75vh;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1)), url("intro_img.jpg");
+  background-image: linear-gradient(rgba(210, 235, 255, 0.3), rgba(250, 255, 255, 0.1)), url("intro_img.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -252,12 +281,10 @@ body {
 }
 
 footer {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
+  display: block;
   margin-top: 40px;
   background-color: #031D3A;
-  height: 80px;
+  height: 120px;
 }
 footer .contact-box {
   display: flex;
@@ -279,6 +306,7 @@ footer p {
   font-size: 11px;
   margin-top: 10px;
   padding: 10px;
+  text-align: center;
 }
 
 @media screen and (min-width: 440px) {
@@ -353,12 +381,10 @@ footer p {
 
   footer {
     height: 125px;
-    display: block;
     margin-top: 40px;
   }
   footer p {
     font-size: 13px;
-    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -422,7 +448,7 @@ footer p {
   }
 
   footer {
-    height: 160px;
+    height: 170px;
   }
   footer .contact-box #contact-box a i {
     font-size: 30px;
@@ -438,7 +464,7 @@ footer p {
     width: 50%;
   }
   .intro .intro-background-image {
-    background-size: 90vh;
+    background-size: 65vh;
     justify-content: flex-start;
     background-repeat: no-repeat;
     background-position: right;
@@ -478,7 +504,7 @@ footer p {
     height: 190px;
   }
   footer .contact-box #contact-box a i {
-    font-size: 40px;
+    font-size: 45px;
   }
   footer p {
     font-size: 20px;

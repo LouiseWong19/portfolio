@@ -15,17 +15,10 @@ body{
      width: 80%;
      background-color: $secondary-color;
   }
-  
-    // .intro-background-image{
-    //   img{
-    //     height: 100%;
-    //     width: 65vh;
-    //     box-shadow: 45px -20px $secondary-color;
-    //   }
-    // }
+
   .intro-background-image{
     height: 75vh;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1)),url('intro_img.jpg');
+    background-image: linear-gradient(rgba(210, 235, 255, 0.3), rgba(250, 255, 255, 0.1)),url('intro_img.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -156,12 +149,10 @@ body{
 
 // footer
 footer{
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
+  display: block;
   margin-top: 40px;
   background-color: $primary-color;
-  height: 80px;
+  height: 120px;
 
 
     .contact-box{
@@ -191,6 +182,7 @@ footer{
     font-size: 11px;
     margin-top: 10px;
     padding: 10px;
+    text-align: center;
   }
 }
 
@@ -301,12 +293,10 @@ footer{
 
   footer{
     height: 125px; 
-    display: block;
     margin-top: 40px; 
 
     p{
       font-size: 13px;
-      text-align: center;
     }
   }
 
@@ -392,7 +382,7 @@ footer{
   }
 
   footer{
-    height: 160px;  
+    height: 170px;  
     
     .contact-box{
       
@@ -422,7 +412,7 @@ footer{
       width: 50%;
     }
     .intro-background-image{
-      background-size: 90vh;
+      background-size: 65vh;
       justify-content: flex-start;
       background-repeat: no-repeat;
       background-position: right;
@@ -480,7 +470,7 @@ footer{
       a{
 
         i {
-      font-size: 40px;
+      font-size: 45px;
         }
       }
     }
