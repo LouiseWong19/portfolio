@@ -15,26 +15,18 @@
 </head>
 <body>
   <!-- Nav -->
-  <nav class="nav__mobile">
-    <h1 class="nav__logo"><img src="logo.jpg" alt="logo"></h1>
-    <ul id="hamburger-menu">
-      <li><a class="menuItem" href="#intro">Home</a></li>
-      <li><a class="menuItem" href="#projects">Projects</a></li>
-      <li><a class="menuItem" href="#about">About</a></li>
-      <li><a class="menuItem" href="#contact">Contact</a></li>
+  <nav class="nav">
+    <img src="./data/images/logo.jpg" class="nav__logo" alt="logo">
+    <ul class="nav__menu">
+      <li><a class="nav__menu--item" href="#intro">Home</a></li>
+      <li><a class="nav__menu--item" href="#projects">Projects</a></li>
+      <li><a class="nav__menu--item" href="#about">About</a></li>
+      <li><a class="nav__menu--item" href="#contact">Contact</a></li>
     </ul>
-    <a class="menu-btn" onclick="openHamburgerMenu()"><i class="fas fa-bars"></i></a>
-    <a class="cancel-btn"><i class="fas fa-times"></i></a>
-  </nav>
-
-  <nav class="nav__desktop">
-    <h1 class="nav__logo"><img src="logo.jpg" alt="logo"></h1>
-    <ul>
-      <li><a href="#intro">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</li></a>
-    </ul>
+    <button class="hamburger__btn">
+      <i class="fas fa-bars hamburger__btn--menu"></i>
+      <i class="fas fa-times hamburger__btn--cancel"></i>
+    </button>
   </nav>
 
   <!-- Introduction -->
@@ -43,7 +35,7 @@
 
     </div>
     <div class="intro-background-image">
-      <!-- <img src="intro_img.jpg"> -->
+      <!-- <img src="./data/images/intro_img.jpg"> -->
       <div class="intro-text">
         <h2>I'm Louise Wong</h2>
         <h2>&</h2>
@@ -59,12 +51,12 @@
     <h3>Projects</h3>
     <div class="project-box">
       <div id="project-box-1">
-        <div><a href="https://www.figma.com/proto/Oipa4NyJdZToslfYwAd3Fv/Bears-Bakery_practice?node-id=25%3A88&scaling=min-zoom&page-id=25%3A87" target="_blank"><img src="bears_bakery.PNG"></a></div>
+        <div><a href="https://www.figma.com/proto/Oipa4NyJdZToslfYwAd3Fv/Bears-Bakery_practice?node-id=25%3A88&scaling=min-zoom&page-id=25%3A87" target="_blank"><img src="./data/images/bears_bakery.PNG"></a></div>
         <p>Skills used:</p>
         <p>Figma</p>
       </div>
       <div id="project-box-2">
-        <div><a href="https://louisewong19.github.io/the_chase_game/" target="_blank"><img src="game.PNG"></a></div>
+        <div><a href="https://louisewong19.github.io/the_chase_game/" target="_blank"><img src="./data/images/game.PNG"></a></div>
         <p>Skills used:</p>
         <p>HTML, CSS, JavaScript</p>
       </div>
@@ -90,12 +82,12 @@
           minus harum expedita labore.</p>
       </div>
       <div id="my-img">
-        <img src="myself.jpg" alt="Picture of Louise Wong">
+        <img src="./data/images/myself.jpg" alt="Picture of Louise Wong">
       </div>
     </div>
   </section>
 
-
+  <!-- Skills -->
   <section class="skills" id="skills">
     <h3>Skills</h3>
     <div class="skill-box">
@@ -106,7 +98,7 @@
     </div>
   </section>
 
-
+  <!-- Footer -->
   <footer>
       <div class="contact-box" id="contact">
         <h4>Contacts</h4>
@@ -121,7 +113,7 @@
   </footer>
   
 
-  <script src="assets/styles/main.js"></script>
+  <script src="./main.js"></script>
 
 
 </body>

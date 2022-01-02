@@ -1,213 +1,81 @@
 @import "_variables.scss";
+@import "_button.scss";
 
 html{
   scroll-behavior: smooth;
 }
+
  
- 
-.nav__mobile{
+.nav{
   display: flex;
-  background-color: $background-color;
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  margin: 0 40px;
-
-}
-
-.nav__logo > img{
-  margin-top: 10px;
-  height: 60px;
-  width: 60px;
-}
-
-#hamburger-menu{
-  display: none;
-  list-style-type: none;
-  font-size: 22px;
-  text-align: center;
-  background-color: $primary-color;
-  z-index: 99;
-  padding-top: 5rem;
-  //transition: all 1s ease-out;
-
-  .menuItem{
-    color: $background-color;
-    text-decoration: none;
-    margin: 50px 80px;
-  }
-}
-
-.menu-btn{
-  border: none;
-  background-color: $background-color;
-  z-index: 100;
-
-  i{
-    font-size: 24px;
-    //transition:transform 0.3s ease-in; 
-  }
-}
-
-.cancel-btn{
-  display: none;
-  border: none;
-  background-color: $background-color;
-  z-index: 100;
-
-  i{
-    font-size: 24px;
-    //transition:transform 0.3s ease-in; 
-  }
-}
-
-
-
- .nav__desktop{
-  display: none;
-  background-color: $background-color;
-  justify-content: space-between;
-  align-items: center;
-  height: 120px;
-  margin: 0 50px;
-
-
   
-  > ul > li{
-    list-style-type: none;
-    display: inline-block;
-    margin-right: 35px;
-    margin-top: 30px;
-    font-size: 18px;
+  .nav__logo{
+    height: 60px;
+    width: 60px;
+    margin-left: 20px;
   }
+  .nav__menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: 0.4s;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: $secondary-color;
+    padding-top: 8rem;
+    text-align: center;
 
-   ul > li > a:link,
-   ul > li > a:visited{
-    text-decoration: none;
-    transition:transform 0.3s ease-in; 
-  }
-
-  ul > li > a:hover{
-    text-decoration: underline;
-    color: $secondary-color;
-    transition: 0.5s;
-  }
-
-}
-
-
- 
- 
-//  @media only screen and (min-width:768px){  
-//  .nav__mobile{
-//    display: none;
-//  }  
-
-//   .nav__desktop{
-//      display: flex;
-//   }
-//  }
-
-// .nav__mobile{
-//   display: flex;
-//   background-color: $background-color;
-//   justify-content: space-between;
-//   align-items: center;
-//   height: 100px;
-//   margin: 0 40px;
-
-// }
-
-// .nav__logo > img{
-//   margin-top: 10px;
-//   height: 60px;
-//   width: 60px;
-// }
-
-// .menu-btn{
-//   //border: none;
-//   background-color: $background-color;
-
-//   i{
-//     font-size: 20px;
-//     transition:transform 0.3s ease-in; 
-//   }
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-// .nav__desktop{
-//   display: none;
-//   background-color: $background-color;
-//   justify-content: space-between;
-//   align-items: center;
-//   height: 120px;
-//   margin: 0 50px;
-
-
-  
-//   > ul > li{
-//     list-style-type: none;
-//     display: inline-block;
-//     margin-right: 35px;
-//     margin-top: 30px;
-//   }
-
-//    ul > li > a:link,
-//    ul > li > a:visited{
-//     text-decoration: none;
-//     transition:transform 0.3s ease-in; 
-//   }
-
-//   ul > li > a:hover{
-//     text-decoration: underline;
-//     color: $secondary-color;
-//     transition: 0.5s;
-//   }
-
-// }
-
-
-@media screen and(min-width:440px){
-  .nav__logo > img{
-    margin-top: 40px;
-    height: 90px;
-    width: 90px;
-
-    .nav__mobile{
-      display: block;
+    & li{
+      margin-bottom: 30px;
+      list-style-type: none;
     }
 
-}
-}
+  .nav__menu--item{
+    //list-style-type: none;
+    text-decoration: none;
+
+    }
+  }
+
+  .hamburger__btn{
+    margin-right: 20px;
+    border: none;
+    //position: fixed;
+    z-index: 100;
+    .hamburger__btn--menu{
+      z-index: 100;
+      display: inline-block;
+    }
+    .hamburger__btn--cancel{
+      display: none;
+    }
+  }
+  .showMenu {
+    transform: translateY(0%);
+  }
+
+} 
+
+
+
 
 @media screen and(min-width:768px){
-  .nav__mobile{
-    display: none;
-  }
-  .nav__desktop{
-    display: flex;
-  }
-  
-  .nav__logo > img{
-    margin-top: 20px;
-    height: 110px;
-    width: 110px;
+  .nav{
+    .nav__menu > li{
+      display: inline-block;
+      margin-right: 20px;
+    }
+    .hamburger__btn{
+      display: none;
+    }
 
+  }
 
 }
-}
-  
-
-
 
 
