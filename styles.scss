@@ -50,14 +50,14 @@ body{
 .projects{
   margin-top: 30px;
 
-  .project-box{
+  .project-boxes{
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
     gap: 25px;
   
-    #project-box-1, #project-box-2, #project-box-3{
+    .project-box{
       display: flex;
       flex-direction: column;
       width: 200px;
@@ -197,12 +197,8 @@ footer{
     }
     .intro-background-image{
       display: flex;
-      //margin-left: 90px;
       justify-content: center;
       align-items: center;
-      // background-size: 85vh;
-      // background-repeat: no-repeat;
-      // background-position: right;
       box-shadow: none;
     }
 
@@ -211,12 +207,12 @@ footer{
   
   .projects{
     margin-top: 50px;
-    .project-box{
+    .project-boxes{
       flex-direction: row;
       justify-content: space-evenly;
       flex-wrap: wrap;
     
-    #project-box-1, #project-box-2, #project-box-3{
+    .project-box{
       width: 300px;
       height: 352px;
       
@@ -315,12 +311,12 @@ footer{
 
   .projects{
     margin-top: 50px;
-    .project-box{
+    .project-boxes{
       flex-direction: row;
       justify-content: space-evenly;
 
     
-    #project-box-1, #project-box-2, #project-box-3{
+    .project-box{
       width: 400px;
       height: 470px;
       
