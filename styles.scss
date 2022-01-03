@@ -9,20 +9,13 @@ body{
 
 // Introduction //
 .intro{
-   .intro-background{
-     //height: 3vh;
-     margin-left: auto;
-     width: 80%;
-     background-color: $secondary-color;
-  }
-
   .intro-background-image{
     height: 75vh;
     background-image: linear-gradient(rgba(210, 235, 255, 0.3), rgba(250, 255, 255, 0.1)),url('./data/images/intro_img.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    box-shadow: 45px -20px $secondary-color;
+    box-shadow: 5em -1.25em $secondary-color;
   }
 
   .intro-text{
@@ -191,15 +184,10 @@ footer{
 // 440px //
 @media screen and(min-width:440px){
   .intro{
-    .intro-background{
-      height: 3vh;
-      width: 70%;
-    }
     .intro-background-image{
       display: flex;
       justify-content: center;
       align-items: center;
-      box-shadow: none;
     }
 
     }
@@ -301,14 +289,9 @@ footer{
 
 // 768px //
 @media screen and(min-width:768px){
-  
-  .intro {
-    .intro-background {
-    height: 3vh;
-    width: 70%;
-    }
+  .intro{
+    margin-top: 20px;
   }
-
   .projects{
     margin-top: 50px;
     .project-boxes{
@@ -328,8 +311,8 @@ footer{
         padding: 2px;
       
       > img{
-        width: 350px;
-        height: 350px;
+        width: 345px;
+        height: 340px;
 
           }
         }
@@ -403,19 +386,16 @@ footer{
 // 1024px //
 @media screen and (min-width:1024px){
   .intro{
-    .intro-background{
-      height: 3vh;
-      width: 50%;
-    }
     .intro-background-image{
       background-size: 60% 100%;
       justify-content: flex-start;
       background-repeat: no-repeat;
       background-position: right;
+      box-shadow: 32em -1.25em $secondary-color;
     }
 
     .intro-text{
-      margin-left: 55px;
+      margin-left: 50px;
     }
   }
 
@@ -426,7 +406,7 @@ footer{
     .about-text{
       margin: 0 40px;
        p{
-          font-size: 24px;
+          font-size: 20px;
       }
     }
     #my-img{

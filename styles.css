@@ -80,7 +80,7 @@ html {
 .nav .nav__logo {
   height: 60px;
   width: 60px;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .nav .nav__menu {
   position: fixed;
@@ -119,9 +119,16 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-  .nav .nav__menu > li {
-    display: inline-block;
-    margin-right: 20px;
+  .nav .nav__menu {
+    position: relative;
+    display: flex;
+    background: none;
+    transform: translateY(0);
+    padding-top: 3rem;
+    justify-content: flex-end;
+  }
+  .nav .nav__menu li {
+    margin-right: 30px;
   }
   .nav .hamburger__btn {
     display: none;
@@ -132,18 +139,13 @@ body {
   font-family: "Roboto", sans-serif, "PT Sans Narrow";
 }
 
-.intro .intro-background {
-  margin-left: auto;
-  width: 80%;
-  background-color: #D2E0E3;
-}
 .intro .intro-background-image {
   height: 75vh;
   background-image: linear-gradient(rgba(210, 235, 255, 0.3), rgba(250, 255, 255, 0.1)), url("./data/images/intro_img.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  box-shadow: 45px -20px #D2E0E3;
+  box-shadow: 5em -1.25em #D2E0E3;
 }
 .intro .intro-text {
   display: flex;
@@ -272,15 +274,10 @@ footer p {
 }
 
 @media screen and (min-width: 440px) {
-  .intro .intro-background {
-    height: 3vh;
-    width: 70%;
-  }
   .intro .intro-background-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: none;
   }
 
   .projects {
@@ -350,9 +347,8 @@ footer p {
   }
 }
 @media screen and (min-width: 768px) {
-  .intro .intro-background {
-    height: 3vh;
-    width: 70%;
+  .intro {
+    margin-top: 20px;
   }
 
   .projects {
@@ -374,8 +370,8 @@ footer p {
     padding: 2px;
   }
   .projects .project-boxes .project-box > div > a > img {
-    width: 350px;
-    height: 350px;
+    width: 345px;
+    height: 340px;
   }
   .projects .project-boxes .project-box > p {
     font-size: 1.375rem;
@@ -421,25 +417,22 @@ footer p {
   }
 }
 @media screen and (min-width: 1024px) {
-  .intro .intro-background {
-    height: 3vh;
-    width: 50%;
-  }
   .intro .intro-background-image {
     background-size: 60% 100%;
     justify-content: flex-start;
     background-repeat: no-repeat;
     background-position: right;
+    box-shadow: 32em -1.25em #D2E0E3;
   }
   .intro .intro-text {
-    margin-left: 55px;
+    margin-left: 50px;
   }
 
   .about #about-box .about-text {
     margin: 0 40px;
   }
   .about #about-box .about-text p {
-    font-size: 24px;
+    font-size: 20px;
   }
   .about #about-box #my-img {
     margin-right: 35px;
