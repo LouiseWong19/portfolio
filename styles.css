@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #031D3A;
 }
 
 body {
@@ -14,11 +13,13 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  color: #FCFCFC;
+  font-size: 2rem;
   font-weight: 400;
 }
 
 h3 {
+  color: #031D3A;
   font-size: 1.875rem;
   font-weight: 400;
   text-align: center;
@@ -71,18 +72,18 @@ html {
   scroll-behavior: smooth;
 }
 
-.nav {
+.introduction .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
 }
-.nav .nav__logo {
-  height: 60px;
-  width: 60px;
+.introduction .nav .nav__logo {
+  fill: #FCFCFC;
+  width: 75px;
   margin-left: 30px;
 }
-.nav .nav__menu {
+.introduction .nav .nav__menu {
   position: fixed;
   transform: translateY(-100%);
   transition: 0.4s;
@@ -95,31 +96,32 @@ html {
   padding-top: 8rem;
   text-align: center;
 }
-.nav .nav__menu li {
+.introduction .nav .nav__menu li {
   margin-bottom: 30px;
   list-style-type: none;
 }
-.nav .nav__menu .nav__menu--item {
+.introduction .nav .nav__menu .nav__menu--item {
   text-decoration: none;
 }
-.nav .hamburger__btn {
-  margin-right: 20px;
+.introduction .nav .hamburger__btn {
+  margin-right: 30px;
   border: none;
   z-index: 100;
 }
-.nav .hamburger__btn .hamburger__btn--menu {
+.introduction .nav .hamburger__btn .hamburger__btn--menu {
+  color: #FCFCFC;
   z-index: 100;
   display: inline-block;
 }
-.nav .hamburger__btn .hamburger__btn--cancel {
+.introduction .nav .hamburger__btn .hamburger__btn--cancel {
   display: none;
 }
-.nav .showMenu {
+.introduction .nav .showMenu {
   transform: translateY(0%);
 }
 
 @media screen and (min-width: 768px) {
-  .nav .nav__menu {
+  .introduction .nav .nav__menu {
     position: relative;
     display: flex;
     background: none;
@@ -127,10 +129,13 @@ html {
     padding-top: 3rem;
     justify-content: flex-end;
   }
-  .nav .nav__menu li {
+  .introduction .nav .nav__menu li {
     margin-right: 30px;
   }
-  .nav .hamburger__btn {
+  .introduction .nav .nav__menu--item {
+    color: #FCFCFC;
+  }
+  .introduction .hamburger__btn {
     display: none;
   }
 }
@@ -139,27 +144,22 @@ body {
   font-family: "Roboto", sans-serif, "PT Sans Narrow";
 }
 
-.intro .intro-background-image {
-  height: 75vh;
-  background-image: linear-gradient(rgba(210, 235, 255, 0.3), rgba(250, 255, 255, 0.1)), url("./data/images/intro_img.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  box-shadow: 5em -1.25em #D2E0E3;
+.introduction {
+  background-image: linear-gradient(rgba(3, 29, 58, 0.95), rgba(3, 29, 58, 0.95)), url("./data/images/myself.jpg");
+  background-size: 145% 100%;
+  background-position: 45% 30%;
 }
-.intro .intro-text {
+.introduction .intro .intro-text {
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: 60vh;
+  line-height: 1.5;
   text-align: center;
   align-content: stretch;
   justify-content: center;
 }
-.intro h2 {
-  font-size: 36px;
-  font-weight: 400;
-}
-.intro a .iconify {
+.introduction .intro a .iconify {
+  color: #FCFCFC;
   font-size: 50px;
 }
 
@@ -274,12 +274,6 @@ footer p {
 }
 
 @media screen and (min-width: 440px) {
-  .intro .intro-background-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .projects {
     margin-top: 50px;
   }
@@ -417,13 +411,6 @@ footer p {
   }
 }
 @media screen and (min-width: 1024px) {
-  .intro .intro-background-image {
-    background-size: 60% 100%;
-    justify-content: flex-start;
-    background-repeat: no-repeat;
-    background-position: right;
-    box-shadow: 32em -1.25em #D2E0E3;
-  }
   .intro .intro-text {
     margin-left: 50px;
   }

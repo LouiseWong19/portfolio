@@ -5,66 +5,68 @@ html{
   scroll-behavior: smooth;
 }
 
- 
-.nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
-  
-  .nav__logo{
-    height: 60px;
-    width: 60px;
-    margin-left: 30px;
-  }
-  .nav__menu {
-    position: fixed;
-    transform: translateY(-100%);
-    transition: 0.4s;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    background: $secondary-color;
-    padding-top: 8rem;
-    text-align: center;
+.introduction{
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    
+    .nav__logo{
+      fill: $background-color;
+      width: 75px;
+      margin-left: 30px;
+    }
+    .nav__menu {
+      position: fixed;
+      transform: translateY(-100%);
+      transition: 0.4s;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      background: $secondary-color;
+      padding-top: 8rem;
+      text-align: center;
 
-    & li{
-      margin-bottom: 30px;
-      list-style-type: none;
+      & li{
+        margin-bottom: 30px;
+        list-style-type: none;
+      }
+
+    .nav__menu--item{
+      
+      text-decoration: none;
+
+      }
     }
 
-  .nav__menu--item{
-    //list-style-type: none;
-    text-decoration: none;
-
-    }
-  }
-
-  .hamburger__btn{
-    margin-right: 20px;
-    border: none;
-    //position: fixed;
-    z-index: 100;
-    .hamburger__btn--menu{
+    .hamburger__btn{
+      margin-right: 30px;
+      border: none;
       z-index: 100;
-      display: inline-block;
+      .hamburger__btn--menu{
+        color: $background-color;
+        z-index: 100;
+        display: inline-block;
+      }
+      .hamburger__btn--cancel{
+        display: none;
+      }
     }
-    .hamburger__btn--cancel{
-      display: none;
+    .showMenu {
+      transform: translateY(0%);
     }
-  }
-  .showMenu {
-    transform: translateY(0%);
-  }
 
-} 
+  } 
+}
 
 
 
 
 @media screen and(min-width:768px){
+  .introduction{
   .nav{
     .nav__menu{
       position: relative;
@@ -76,11 +78,11 @@ html{
       & li {
         margin-right: 30px;
       }
+      &--item{
+        color: $background-color;
+      }
     }
-    // .nav__menu > li{
-    //   display: inline-block;
-    //   margin-right: 20px;
-    // }
+    }
     .hamburger__btn{
       display: none;
     }
@@ -88,5 +90,6 @@ html{
   }
 
 }
+
 
 

@@ -8,33 +8,28 @@ body{
 }
 
 // Introduction //
-.intro{
-  .intro-background-image{
-    height: 75vh;
-    background-image: linear-gradient(rgba(210, 235, 255, 0.3), rgba(250, 255, 255, 0.1)),url('./data/images/intro_img.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    box-shadow: 5em -1.25em $secondary-color;
-  }
+.introduction{
+  background-image: linear-gradient(rgba(3, 29, 58, 0.95), rgba(3, 29, 58, 0.95)),url("./data/images/myself.jpg");
+  background-size: 145% 100%;
+  background-position: 45% 30%;
 
-  .intro-text{
-    display: flex;
-    flex-direction: column;
-    height: 70vh;
-    text-align: center;
-    align-content: stretch;
-    justify-content: center;
-  }
-  h2{
-    font-size: 36px;
-    font-weight: 400;
-  }
-  
-    a{
-
-    .iconify{
-      font-size: 50px;
+  .intro{
+      
+    .intro-text{
+      display: flex;
+      flex-direction: column;
+      height: 60vh;
+      line-height: 1.5;
+      text-align: center;
+      align-content: stretch;
+      justify-content: center;
+    }
+    
+      a{
+      .iconify{
+        color: $background-color;
+        font-size: 50px;
+      }
     }
   }
 }
@@ -116,29 +111,29 @@ body{
 }
 
 // Skills Section //
-.skills{
-  margin-top: 30px;
+// .skills{
+//   margin-top: 30px;
 
-  .skill-box{
-    display: grid;
-    grid-template-columns: 50px 50px;
-    gap: 35px;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
+//   .skill-box{
+//     display: grid;
+//     grid-template-columns: 50px 50px;
+//     gap: 35px;
+//     align-items: center;
+//     justify-content: center;
+//     justify-items: center;
+//     text-align: center;
 
-    > i {
-      font-size: 32px;
+//     > i {
+//       font-size: 32px;
 
-    > p {
-      font-size: 10px;
-      margin-top: 5px;
-    }
-    }
-  }
+//     > p {
+//       font-size: 10px;
+//       margin-top: 5px;
+//     }
+//     }
+//   }
   
-}
+// }
 
 // footer
 footer{
@@ -183,14 +178,7 @@ footer{
 
 // 440px //
 @media screen and(min-width:440px){
-  .intro{
-    .intro-background-image{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
 
-    }
   
   
   .projects{
@@ -386,13 +374,7 @@ footer{
 // 1024px //
 @media screen and (min-width:1024px){
   .intro{
-    .intro-background-image{
-      background-size: 60% 100%;
-      justify-content: flex-start;
-      background-repeat: no-repeat;
-      background-position: right;
-      box-shadow: 32em -1.25em $secondary-color;
-    }
+
 
     .intro-text{
       margin-left: 50px;
