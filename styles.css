@@ -334,7 +334,7 @@ footer p {
     padding: 15px;
   }
   .introduction .intro .intro-text {
-    height: 70vh;
+    height: 78vh;
   }
 
   .projects .project-boxes {
@@ -391,7 +391,8 @@ footer p {
 @media screen and (min-width: 1024px) {
   .introduction {
     background-image: linear-gradient(rgba(3, 29, 58, 0.89), rgba(3, 29, 58, 0.95)), url(./data/images/myself.jpg);
-    background-size: 100%;
+    background-size: 105%;
+    background-position: 105% 30%;
   }
   .introduction .intro .intro-text {
     margin-left: 30rem;
