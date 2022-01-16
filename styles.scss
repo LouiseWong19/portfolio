@@ -14,15 +14,14 @@ body{
   background-position: 45% 30%;
 
   .intro{
-      
     .intro-text{
       display: flex;
       flex-direction: column;
       height: 60vh;
       line-height: 1.5;
       text-align: center;
-      align-content: stretch;
       justify-content: center;
+      margin: 0 30px;
     }
     
       a{
@@ -49,7 +48,7 @@ body{
       display: flex;
       flex-direction: column;
       width: 200px;
-      height: 235px;
+      height: 245px;
       background-color: $secondary-color;
       box-shadow: 5px 5px 5px rgb(167, 166, 166);
       
@@ -69,6 +68,7 @@ body{
       }
       
       >p{
+        color: $primary-color;
         font-size: 0.875rem;
         text-align: center;
       }
@@ -101,12 +101,16 @@ body{
     }
   }
   .skill-box{
-    margin-top: 20px;
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     gap: 0.9rem;
     > i{
+      color: $background-color;
+      font-size: 2rem;
+    }
+    .iconify{
       color: $background-color;
       font-size: 2rem;
     }
@@ -118,58 +122,39 @@ body{
 .contact{
   padding: 30px;
   .contact-box{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 55px;
+    a,
+    a:visited{
+      color: $primary-color;
+      i{
+        font-size: 1.8rem;
+      }
+    }
   }
 }
 
 
 // footer
 footer{
-  display: block;
-  background-color: $primary-color;
-  height: 120px;
-
-
-    .contact-box{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      #contact-box{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 25px;
-        
-        a{
-          
-          i{
-            font-size: 24px;
-            color: $background-color;
-            margin-bottom: 10px;
-          }
-        }
-      }
-    }
-  
+  display: flex;
+  background-color: #031D3A;
+  height: 75px;
+  align-items: flex-end;
+  justify-content: center;
   
   p{
     color: $background-color;
     font-size: 11px;
-    margin-top: 10px;
     padding: 10px;
-    text-align: center;
   }
 }
 
 
 
 // 440px //
-@media screen and(min-width:440px){
-
-  
-  
+@media screen and(min-width:440px){ 
   .projects{
     margin-top: 50px;
     .project-boxes{

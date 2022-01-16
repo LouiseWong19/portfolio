@@ -158,8 +158,8 @@ body {
   height: 60vh;
   line-height: 1.5;
   text-align: center;
-  align-content: stretch;
   justify-content: center;
+  margin: 0 30px;
 }
 .introduction .intro a .iconify {
   color: #FCFCFC;
@@ -180,7 +180,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 200px;
-  height: 235px;
+  height: 245px;
   background-color: #D2E0E3;
   box-shadow: 5px 5px 5px #a7a6a6;
 }
@@ -196,6 +196,7 @@ body {
   height: 175px;
 }
 .projects .project-boxes .project-box > p {
+  color: #031D3A;
   font-size: 0.875rem;
   text-align: center;
 }
@@ -221,7 +222,7 @@ body {
   color: #FCFCFC;
 }
 .about .about-box .skill-box {
-  margin-top: 20px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
@@ -231,42 +232,39 @@ body {
   color: #FCFCFC;
   font-size: 2rem;
 }
+.about .about-box .skill-box .iconify {
+  color: #FCFCFC;
+  font-size: 2rem;
+}
 
 .contact {
   padding: 30px;
 }
 .contact .contact-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 55px;
+}
+.contact .contact-box a,
+.contact .contact-box a:visited {
+  color: #031D3A;
+}
+.contact .contact-box a i,
+.contact .contact-box a:visited i {
+  font-size: 1.8rem;
 }
 
 footer {
-  display: block;
-  background-color: #031D3A;
-  height: 120px;
-}
-footer .contact-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-footer .contact-box #contact-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 25px;
-}
-footer .contact-box #contact-box a i {
-  font-size: 24px;
-  color: #FCFCFC;
-  margin-bottom: 10px;
+  background-color: #031D3A;
+  height: 75px;
+  align-items: flex-end;
+  justify-content: center;
 }
 footer p {
   color: #FCFCFC;
   font-size: 11px;
-  margin-top: 10px;
   padding: 10px;
-  text-align: center;
 }
 
 @media screen and (min-width: 440px) {
