@@ -15,27 +15,29 @@ h1 {
 h2 {
   color: #FCFCFC;
   font-size: 2rem;
-  font-weight: 400;
 }
 
 h3 {
   color: #031D3A;
   font-size: 1.875rem;
-  font-weight: 400;
   text-align: center;
   margin-bottom: 25px;
 }
 
 h4 {
   color: #FCFCFC;
-  font-size: 11px;
-  font-weight: 400;
+  font-size: 0.7rem;
   text-align: center;
   margin: 15px 0;
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  line-height: 120%;
+}
+
+h2, h3, h4 {
+  font-weight: 400;
 }
 
 @media screen and (min-width: 440px) {
@@ -101,6 +103,7 @@ html {
   list-style-type: none;
 }
 .introduction .nav .nav__menu .nav__menu--item {
+  color: #031D3A;
   text-decoration: none;
 }
 .introduction .nav .hamburger__btn {
@@ -164,7 +167,7 @@ body {
 }
 
 .projects {
-  margin-top: 30px;
+  padding: 30px;
 }
 .projects .project-boxes {
   display: flex;
@@ -198,55 +201,48 @@ body {
 }
 
 .about {
-  margin-top: 30px;
+  padding: 30px;
+  background-color: #031D3A;
 }
-.about #about-box {
+.about > h3 {
+  color: #FCFCFC;
+}
+.about .about-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.about .about-text {
+.about .about-box .about-text {
   margin: 0 30px;
 }
-.about .about-text p {
-  line-height: 120%;
-  font-size: 14px;
+.about .about-box .about-text p {
   text-align: center;
+  color: #FCFCFC;
 }
-.about #my-img {
-  margin-top: 35px;
+.about .about-box .skill-box {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 0.9rem;
 }
-.about #my-img > img {
-  width: 200px;
-  height: 170px;
-  box-shadow: 10px -10px #D2E0E3;
-  margin-top: auto;
+.about .about-box .skill-box > i {
+  color: #FCFCFC;
+  font-size: 2rem;
 }
 
-.skills {
-  margin-top: 30px;
+.contact {
+  padding: 30px;
 }
-.skills .skill-box {
+.contact .contact-box {
   display: grid;
-  grid-template-columns: 50px 50px;
-  gap: 35px;
-  align-items: center;
-  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  text-align: center;
-}
-.skills .skill-box > i {
-  font-size: 32px;
-}
-.skills .skill-box > i > p {
-  font-size: 10px;
-  margin-top: 5px;
 }
 
 footer {
   display: block;
-  margin-top: 40px;
   background-color: #031D3A;
   height: 120px;
 }
