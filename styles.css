@@ -150,6 +150,9 @@ html {
     width: 95px;
     margin-top: 20px;
   }
+  .introduction .nav .nav__menu {
+    padding-top: 2rem;
+  }
   .introduction .nav .nav__menu .nav__menu--item {
     font-size: 1.25rem;
   }
@@ -236,6 +239,7 @@ body {
 .about .about-box .about-text p {
   text-align: center;
   color: #FCFCFC;
+  line-height: 1.4;
 }
 .about .about-box .skill-box {
   margin-top: 30px;
@@ -327,6 +331,7 @@ footer p {
   .introduction {
     background-size: 105% 100%;
     background-position: 125% 30%;
+    padding: 15px;
   }
   .introduction .intro .intro-text {
     height: 70vh;
@@ -408,7 +413,7 @@ footer p {
     margin: 0;
   }
   .about .about-box .about-text p {
-    font-size: 20px;
+    font-size: 1.3rem;
   }
   .about .about-box .skill-box {
     margin: 0;
@@ -435,5 +440,20 @@ footer p {
   }
   footer p {
     font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about .about-box {
+    padding: 30px;
+  }
+  .about .about-box .about-text p {
+    font-size: 1.4rem;
+  }
+
+  .contact .contact-box {
+    margin: 0px 155px;
+  }
+  .contact .contact-box a i {
+    font-size: 3.5rem;
   }
 }

@@ -99,6 +99,7 @@ body{
     p{
       text-align: center;
       color: $background-color;
+      line-height: 1.4;
     }
   }
   .skill-box{
@@ -228,6 +229,7 @@ footer{
   .introduction{
     background-size: 105% 100%;
     background-position: 125% 30%;
+    padding: 15px;
     .intro{
       .intro-text{
         height: 70vh;
@@ -329,7 +331,7 @@ footer{
     .about-text{
       margin: 0;
        p{
-          font-size: 20px;
+          font-size: 1.3rem;
       }
     }
     .skill-box{
@@ -367,4 +369,27 @@ footer{
     font-size: 1.25rem;
   }
 }
+}
+
+@media screen and(min-width:1440px){
+  .about{
+    .about-box{
+      padding: 30px;
+      .about-text{
+        p{
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  .contact{
+    .contact-box{
+      margin: 0px 155px;
+      a{
+        i{
+          font-size: 3.5rem;
+        }
+      }
+    }
+  }
 }
