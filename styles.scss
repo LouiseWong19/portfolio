@@ -46,7 +46,9 @@ body{
   
     .project-box{
       display: flex;
+      align-items: center;
       flex-direction: column;
+      padding: 10px;
       width: 200px;
       height: 245px;
       background-color: $secondary-color;
@@ -54,7 +56,6 @@ body{
       
       > div{
         height: 190px;
-        padding: 10px;
         
         > a{
           padding: 2px;
@@ -146,7 +147,7 @@ footer{
   
   p{
     color: $background-color;
-    font-size: 11px;
+    font-size: 0.7rem;
     padding: 10px;
   }
 }
@@ -156,7 +157,6 @@ footer{
 // 440px //
 @media screen and(min-width:440px){ 
   .projects{
-    margin-top: 50px;
     .project-boxes{
       flex-direction: row;
       justify-content: space-evenly;
@@ -165,84 +165,58 @@ footer{
     .project-box{
       width: 300px;
       height: 352px;
+      padding: 15px;
       
       > div{
         height: 285px;
-        padding: 10px;
 
       > a {
-        padding: 2px;
       
       > img{
-        width: 275px;
-        height: 270px;
+        width: 270px;
+        height: 265px;
 
           }
         }
       }
-    >p{
-      font-size: 1.125rem;
+      > p{
+        font-size: 1.15rem;
       }
     }
 
     }
   }
-
   .about{
-
-    #about-box{
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-    .about-text{
-       p{
-          font-size: 18px;
-      }
-    }
-    #my-img{
-      margin-right: 35px;
-  
-      > img{
-        width: 250px;
-        height: 200px;
-        box-shadow: 15px -15px $secondary-color;
-        margin-top: auto;
-  
-      }
-    }
-  }
-
-  .skills{
-  
-    .skill-box{
-      gap: 60px; 
+    .about-box{
+          .skill-box{ 
       > i {
-        font-size: 45px;
-
-        p{
-          font-size: 14px;
-        }
+        font-size: 2.5rem;
+      }
+      > .iconify{
+        font-size: 2.5rem;
       }
     }
+    }
   }
-  
-    .contact-box{
 
-      #contact-box{
-         i {
-        font-size: 40px;
-      
+  
+  
+    .contact{
+
+      .contact-box{
+        a{
+          i {
+        font-size: 1.875rem;
+        }
        }
       }
     }
 
 
   footer{
-    height: 125px; 
-    margin-top: 40px; 
-
+    height: 85px;
     p{
-      font-size: 13px;
+      font-size: 0.8rem;
     }
   }
 
@@ -251,11 +225,16 @@ footer{
 
 // 768px //
 @media screen and(min-width:768px){
-  .intro{
-    margin-top: 20px;
+  .introduction{
+    background-size: 105% 100%;
+    background-position: 125% 30%;
+    .intro{
+      .intro-text{
+        height: 70vh;
+      }
+    }
   }
   .projects{
-    margin-top: 50px;
     .project-boxes{
       flex-direction: row;
       justify-content: space-evenly;
@@ -264,10 +243,10 @@ footer{
     .project-box{
       width: 400px;
       height: 470px;
+      padding: 20px;
       
       > div{
-        height: 380px;
-        padding: 26px;
+        height: 360px;
 
       > a {
         padding: 2px;
@@ -279,8 +258,8 @@ footer{
           }
         }
       }
-    >p{
-      font-size: 1.375rem;
+      p{
+        font-size: 1.375rem;
       }
     }
 
@@ -288,58 +267,38 @@ footer{
   }
   
   .about{
-    margin-top: 50px;
+    margin-top: 40px;
+    .about-box{
+      .skill-box{
+        gap: 1.5rem;
+        > i{
+          font-size: 3rem;;
+        }
+        > .iconify{
+          font-size: 3rem;
+        }
+      }
+    }
 
-    #about-box{
-      flex-direction: row;
-      flex-wrap: nowrap;
-      margin: 0 25px;
-    }
-    .about-text{
-       p{
-          font-size: 20px;
-      }
-    }
-    #my-img{
-      margin-right: 35px;
-  
-      > img{
-        width: 350px;
-        height: 300px;
-        box-shadow: 20px -20px $secondary-color;
-        margin-top: auto;
-  
-      }
-    }
   }
 
-  .skills{
-    .skill-box{
-      gap: 65px; 
-      > i {
-        font-size: 50px;
-      }
-    }
-  }
-
-  footer{
-    height: 170px;  
-    
-    .contact-box{
+    .contact{
       
-      #contact-box{
+      .contact-box{
+        margin: 0px 85px;
         a{
-
           i {
-        font-size: 30px;
+        font-size: 2.8rem;
           }
         }
       }
     } 
-
+    
+  footer{
+    height: 130px;  
+    margin-top: 20px;
     p{
-      font-size: 18px;
-      margin-top: 25px;
+      font-size: 1.125rem;
     }
   }
 
@@ -347,70 +306,65 @@ footer{
 
 // 1024px //
 @media screen and (min-width:1024px){
-  .intro{
-
-
-    .intro-text{
-      margin-left: 50px;
+  .introduction{
+    background-image: linear-gradient(rgba(3, 29, 58, 0.89), rgba(3, 29, 58, 0.95)), url(./data/images/myself.jpg);
+    background-size: 100%;
+    .intro{
+          .intro-text{
+      margin-left: 30rem;
     }
+    }
+
+  }
+  .projects{
+    padding: 50px;
   }
 
   .about{
-
-    #about-box{
-
+      padding: 50px;
+    .about-box{
+      flex-direction: row;
+      padding: 20px;
+      gap: 4rem;
     .about-text{
-      margin: 0 40px;
+      margin: 0;
        p{
           font-size: 20px;
       }
     }
-    #my-img{
-      margin-right: 35px;
-  
-      > img{
-        width: 390px;
-        height: 320px;
-        box-shadow: 24px -24px $secondary-color;
-        margin-top: auto;
-  
+    .skill-box{
+      margin: 0;
+      > i{
+        font-size: 4rem;
+      }
+      > .iconify{
+        font-size: 4rem;
       }
     }
+
   }
 }
 
-.skills{
-  .skill-box{
-    display: flex;
-    gap: 65px; 
-    > i {
-      font-size: 60px;
-
-      p{
-        font-size: 16px;
-      }
-    }
-  }
-}
-
-footer{
-  height: 190px;  
-  
-  .contact-box{
-    
-    #contact-box{
+  .contact{
+    padding: 50px;
+    .contact-box{
+      margin-top: 20px;
       a{
 
         i {
-      font-size: 45px;
+          font-size: 3rem;
         }
       }
     }
   } 
 
+footer{
+  height: 155px;  
+  
+
+
   p{
-    font-size: 20px;
-    margin-top: 25px;
+    font-size: 1.25rem;
   }
 }
 }

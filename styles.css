@@ -24,19 +24,12 @@ h3 {
   margin-bottom: 25px;
 }
 
-h4 {
-  color: #FCFCFC;
-  font-size: 0.7rem;
-  text-align: center;
-  margin: 15px 0;
-}
-
 p {
   font-size: 0.875rem;
   line-height: 120%;
 }
 
-h2, h3, h4 {
+h2, h3 {
   font-weight: 400;
 }
 
@@ -45,23 +38,27 @@ h2, h3, h4 {
     font-size: 2rem;
   }
 
-  h4 {
-    font-size: 14px;
+  p {
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 768px) {
   h3 {
     font-size: 2.25rem;
+    margin-bottom: 35px;
   }
 
-  h4 {
-    font-size: 18px;
+  p {
+    font-size: 1.125rem;
   }
 }
 @media screen and (min-width: 768px) {
-  h4 {
-    margin: 20px 0;
-    font-size: 20px;
+  h3 {
+    font-size: 2.625rem;
+  }
+
+  p {
+    font-size: 1.25rem;
   }
 }
 button {
@@ -102,7 +99,8 @@ html {
   margin-bottom: 30px;
   list-style-type: none;
 }
-.introduction .nav .nav__menu .nav__menu--item {
+.introduction .nav .nav__menu .nav__menu--item,
+.introduction .nav .nav__menu .nav__menu--item:visited {
   color: #031D3A;
   text-decoration: none;
 }
@@ -117,6 +115,7 @@ html {
   display: inline-block;
 }
 .introduction .nav .hamburger__btn .hamburger__btn--cancel {
+  color: #031D3A;
   display: none;
 }
 .introduction .nav .showMenu {
@@ -135,11 +134,27 @@ html {
   .introduction .nav .nav__menu li {
     margin-right: 30px;
   }
-  .introduction .nav .nav__menu--item {
+  .introduction .nav .nav__menu > .nav__menu--item,
+.introduction .nav .nav__menu .nav__menu--item:visited {
     color: #FCFCFC;
   }
   .introduction .hamburger__btn {
     display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .introduction .nav {
+    height: 115px;
+  }
+  .introduction .nav .nav__logo {
+    width: 95px;
+    margin-top: 20px;
+  }
+  .introduction .nav .nav__menu .nav__menu--item {
+    font-size: 1.25rem;
+  }
+  .introduction .nav .nav__menu > li {
+    margin-bottom: 0;
   }
 }
 body {
@@ -178,7 +193,9 @@ body {
 }
 .projects .project-boxes .project-box {
   display: flex;
+  align-items: center;
   flex-direction: column;
+  padding: 10px;
   width: 200px;
   height: 245px;
   background-color: #D2E0E3;
@@ -186,7 +203,6 @@ body {
 }
 .projects .project-boxes .project-box > div {
   height: 190px;
-  padding: 10px;
 }
 .projects .project-boxes .project-box > div > a {
   padding: 2px;
@@ -263,14 +279,11 @@ footer {
 }
 footer p {
   color: #FCFCFC;
-  font-size: 11px;
+  font-size: 0.7rem;
   padding: 10px;
 }
 
 @media screen and (min-width: 440px) {
-  .projects {
-    margin-top: 50px;
-  }
   .projects .project-boxes {
     flex-direction: row;
     justify-content: space-evenly;
@@ -279,69 +292,46 @@ footer p {
   .projects .project-boxes .project-box {
     width: 300px;
     height: 352px;
+    padding: 15px;
   }
   .projects .project-boxes .project-box > div {
     height: 285px;
-    padding: 10px;
-  }
-  .projects .project-boxes .project-box > div > a {
-    padding: 2px;
   }
   .projects .project-boxes .project-box > div > a > img {
-    width: 275px;
-    height: 270px;
+    width: 270px;
+    height: 265px;
   }
   .projects .project-boxes .project-box > p {
-    font-size: 1.125rem;
+    font-size: 1.15rem;
   }
 
-  .about #about-box {
-    flex-direction: row;
-    flex-wrap: wrap;
+  .about .about-box .skill-box > i {
+    font-size: 2.5rem;
   }
-  .about .about-text p {
-    font-size: 18px;
-  }
-  .about #my-img {
-    margin-right: 35px;
-  }
-  .about #my-img > img {
-    width: 250px;
-    height: 200px;
-    box-shadow: 15px -15px #D2E0E3;
-    margin-top: auto;
+  .about .about-box .skill-box > .iconify {
+    font-size: 2.5rem;
   }
 
-  .skills .skill-box {
-    gap: 60px;
-  }
-  .skills .skill-box > i {
-    font-size: 45px;
-  }
-  .skills .skill-box > i p {
-    font-size: 14px;
-  }
-
-  .contact-box #contact-box i {
-    font-size: 40px;
+  .contact .contact-box a i {
+    font-size: 1.875rem;
   }
 
   footer {
-    height: 125px;
-    margin-top: 40px;
+    height: 85px;
   }
   footer p {
-    font-size: 13px;
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .intro {
-    margin-top: 20px;
+  .introduction {
+    background-size: 105% 100%;
+    background-position: 125% 30%;
+  }
+  .introduction .intro .intro-text {
+    height: 70vh;
   }
 
-  .projects {
-    margin-top: 50px;
-  }
   .projects .project-boxes {
     flex-direction: row;
     justify-content: space-evenly;
@@ -349,10 +339,10 @@ footer p {
   .projects .project-boxes .project-box {
     width: 400px;
     height: 470px;
+    padding: 20px;
   }
   .projects .project-boxes .project-box > div {
-    height: 380px;
-    padding: 26px;
+    height: 360px;
   }
   .projects .project-boxes .project-box > div > a {
     padding: 2px;
@@ -361,89 +351,89 @@ footer p {
     width: 345px;
     height: 340px;
   }
-  .projects .project-boxes .project-box > p {
+  .projects .project-boxes .project-box p {
     font-size: 1.375rem;
   }
 
   .about {
-    margin-top: 50px;
+    margin-top: 40px;
   }
-  .about #about-box {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 0 25px;
+  .about .about-box .skill-box {
+    gap: 1.5rem;
   }
-  .about .about-text p {
-    font-size: 20px;
+  .about .about-box .skill-box > i {
+    font-size: 3rem;
   }
-  .about #my-img {
-    margin-right: 35px;
-  }
-  .about #my-img > img {
-    width: 350px;
-    height: 300px;
-    box-shadow: 20px -20px #D2E0E3;
-    margin-top: auto;
+  .about .about-box .skill-box > .iconify {
+    font-size: 3rem;
   }
 
-  .skills .skill-box {
-    gap: 65px;
+  .contact .contact-box {
+    margin: 0px 85px;
   }
-  .skills .skill-box > i {
-    font-size: 50px;
+  .contact .contact-box a i {
+    font-size: 2.8rem;
   }
 
   footer {
-    height: 170px;
-  }
-  footer .contact-box #contact-box a i {
-    font-size: 30px;
+    height: 130px;
+    margin-top: 20px;
   }
   footer p {
-    font-size: 18px;
-    margin-top: 25px;
+    font-size: 1.125rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .intro .intro-text {
-    margin-left: 50px;
+  .introduction {
+    background-image: linear-gradient(rgba(3, 29, 58, 0.89), rgba(3, 29, 58, 0.95)), url(./data/images/myself.jpg);
+    background-size: 100%;
+  }
+  .introduction .intro .intro-text {
+    margin-left: 30rem;
   }
 
-  .about #about-box .about-text {
-    margin: 0 40px;
+  .projects {
+    padding: 50px;
   }
-  .about #about-box .about-text p {
+
+  .about {
+    padding: 50px;
+  }
+  .about .about-box {
+    flex-direction: row;
+    padding: 20px;
+    gap: 4rem;
+  }
+  .about .about-box .about-text {
+    margin: 0;
+  }
+  .about .about-box .about-text p {
     font-size: 20px;
   }
-  .about #about-box #my-img {
-    margin-right: 35px;
+  .about .about-box .skill-box {
+    margin: 0;
   }
-  .about #about-box #my-img > img {
-    width: 390px;
-    height: 320px;
-    box-shadow: 24px -24px #D2E0E3;
-    margin-top: auto;
+  .about .about-box .skill-box > i {
+    font-size: 4rem;
+  }
+  .about .about-box .skill-box > .iconify {
+    font-size: 4rem;
   }
 
-  .skills .skill-box {
-    display: flex;
-    gap: 65px;
+  .contact {
+    padding: 50px;
   }
-  .skills .skill-box > i {
-    font-size: 60px;
+  .contact .contact-box {
+    margin-top: 20px;
   }
-  .skills .skill-box > i p {
-    font-size: 16px;
+  .contact .contact-box a i {
+    font-size: 3rem;
   }
 
   footer {
-    height: 190px;
-  }
-  footer .contact-box #contact-box a i {
-    font-size: 45px;
+    height: 155px;
   }
   footer p {
-    font-size: 20px;
-    margin-top: 25px;
+    font-size: 1.25rem;
   }
 }

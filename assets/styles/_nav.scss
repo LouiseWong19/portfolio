@@ -35,7 +35,8 @@ html{
         list-style-type: none;
       }
 
-    .nav__menu--item{
+    .nav__menu--item,
+    .nav__menu--item:visited{
       color: $primary-color;
       text-decoration: none;
 
@@ -52,6 +53,7 @@ html{
         display: inline-block;
       }
       .hamburger__btn--cancel{
+        color: $primary-color;
         display: none;
       }
     }
@@ -78,7 +80,8 @@ html{
       & li {
         margin-right: 30px;
       }
-      &--item{
+      > .nav__menu--item,
+      .nav__menu--item:visited{
         color: $background-color;
       }
     }
@@ -89,6 +92,26 @@ html{
 
   }
 
+}
+
+@media screen and(min-width:1024px){
+  .introduction{
+    .nav{
+      height: 115px;
+      .nav__logo{
+        width: 95px;
+        margin-top: 20px;
+      }
+      .nav__menu{
+         .nav__menu--item{
+          font-size: 1.25rem;
+        }
+        > li{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 }
 
 
