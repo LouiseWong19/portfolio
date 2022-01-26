@@ -134,7 +134,7 @@ html {
   .introduction .nav .nav__menu li {
     margin-right: 30px;
   }
-  .introduction .nav .nav__menu > .nav__menu--item,
+  .introduction .nav .nav__menu .nav__menu--item,
 .introduction .nav .nav__menu .nav__menu--item:visited {
     color: #FCFCFC;
   }
