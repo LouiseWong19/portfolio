@@ -4,7 +4,7 @@
 ## Introduction
 This portfolio includes an introduction about myself and several projects that I have worked on before.
 
-## Technology Used:
+### Technology Used:
 - HTML
 - SCSS
 - JavaScript
